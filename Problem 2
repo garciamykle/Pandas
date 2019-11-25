@@ -1,0 +1,8 @@
+import pandas as pd
+
+df = pd.read_csv('cars.csv')
+
+a = df.loc[1:9:2]
+b = df.loc[0:0]
+c = df.loc[[23],['cyl']]
+d = df.loc[[1,28,18],['cyl','gear']]
